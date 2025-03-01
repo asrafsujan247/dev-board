@@ -1,9 +1,7 @@
 // show the task complete in activity log
 
 const completeButtons = document.getElementsByClassName("complete-btn");
-const taskRemaining = parseInt(
-  document.getElementById("task-remaining").innerText
-);
+
 for (let button of completeButtons) {
   button.addEventListener("click", function (event) {
     // alert
@@ -13,7 +11,25 @@ for (let button of completeButtons) {
     button.setAttribute("disabled", "");
 
     // task remaining
-    // document.getElementById("task-remaining").innerText = taskRemaining - 1;
+    const taskRemaining = parseInt(
+      document.getElementById("task-remaining").innerText
+    );
+    document.getElementById("task-remaining").innerText = taskRemaining - 1;
+
+    // task completed
+    const taskCompleted = parseInt(
+      document.getElementById("task-completed").innerText
+    );
+    document.getElementById("task-completed").innerText = taskCompleted + 1;
+
+    // task complete time
+    const currentDate = new Date();
+    const currentTime = currentDate.toLocaleTimeString([], {
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: true,
+    });
 
     // activity log message
     const cardTitle =
@@ -21,7 +37,7 @@ for (let button of completeButtons) {
     const messageContainer = document.getElementById("message-container");
     const p = document.createElement("p");
     p.classList.add("bg-blue-50", "text-gray-500", "p-3", "mb-4", "rounded-lg");
-    p.innerText = `You have Complete The Task ${cardTitle} at`;
+    p.innerText = `You have Complete The Task ${cardTitle} at ${currentTime}`;
     messageContainer.appendChild(p);
   });
 }
