@@ -1,3 +1,15 @@
+// random color for body
+
+document
+  .getElementById("color-theme-btn")
+  .addEventListener("click", function () {
+    const number1 = Math.floor(Math.random() * (255 - 0) + 0); // * (max - min) + min
+    const number2 = Math.floor(Math.random() * (255 - 0) + 0);
+    const number3 = Math.floor(Math.random() * (255 - 0) + 0);
+    const randomColor = `rgb(${number1}, ${number2}, ${number3})`;
+    document.getElementById("body").style.backgroundColor = randomColor;
+  });
+
 // current date in task details section
 const currentDate = new Date().toDateString();
 const dayName = currentDate.split(" ")[0];
