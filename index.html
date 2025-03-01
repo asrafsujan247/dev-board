@@ -27,7 +27,7 @@
   </head>
   <body class="poppins-font bg-blue-50">
     <!-- header section -->
-    <header class="max-w-7xl mx-auto py-5">
+    <header class="max-w-[1400px] mx-auto py-5">
       <!-- nav section -->
       <nav class="flex justify-between bg-white px-6 py-5 rounded-xl">
         <div class="flex justify-center items-center">
@@ -51,6 +51,63 @@
         </div>
       </nav>
     </header>
+    <!-- main section -->
+    <main class="max-w-[1400px] mx-auto pb-14">
+      <div class="grid grid-cols-4 space-x-5">
+        <!-- tasks section -->
+        <div class="col-span-3 bg-white rounded-xl p-6">
+          <!-- task details part-->
+          <div class="grid grid-cols-4 space-x-5">
+            <div class="bg-blue-50 pl-4 pr-2 py-7 flex items-center rounded-xl">
+              <div class="bg-white p-3 rounded-full">
+                <img
+                  class="w-7 h-7"
+                  src="./assets/checkbox.png"
+                  alt="checkbox"
+                />
+              </div>
+              <div class="ml-4">
+                <p class="font-medium text-gray-600">Task Assigned</p>
+                <p class="font-bold text-3xl">6</p>
+              </div>
+            </div>
+            <div
+              class="col-span-2 flex items-center bg-linear-to-r from-blue-500 to-indigo-300 rounded-xl py-5 pl-5"
+            >
+              <img src="./assets/board.png" alt="" />
+              <h2 class="text-white text-2xl font-medium ml-4">
+                Discover Something<br />
+                New Today!
+              </h2>
+            </div>
+            <div class="bg-blue-50 rounded-xl flex items-center py-7 pl-4">
+              <div class="p-4 bg-white rounded-full mr-3">
+                <img class="w-7 h-7" src="./assets/calender.png" alt="" />
+              </div>
+              <div>
+                <p class="text-xl">Wed ,</p>
+                <p class="text-xl font-bold">Jul 28 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- activity log section -->
+        <div class="bg-white rounded-xl">
+          <!-- clear history section -->
+          <div
+            class="flex flex-col items-center border-b border-dashed border-gray-200 p-5"
+          >
+            <div class="flex items-center">
+              <img class="mr-3" src="./assets/activity.png" alt="activity" />
+              <p class="text-xl font-medium">Activity Log</p>
+            </div>
+            <button class="btn btn-primary text-base font-medium mt-4">
+              Clear History
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- script -->
     <script src="./js/script.js"></script>
   </body>
