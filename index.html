@@ -70,7 +70,7 @@
               </div>
               <div class="ml-4">
                 <p class="font-medium text-gray-600">Task Assigned</p>
-                <p class="font-bold text-3xl">6</p>
+                <p id="task-remaining" class="font-bold text-3xl">6</p>
               </div>
             </div>
             <div
@@ -98,7 +98,7 @@
             <div class="task-card px-4 py-6 bg-blue-50 rounded-xl">
               <div class="border-b border-dashed border-gray-200 pb-4">
                 <span class="bg-white py-2 px-4 rounded-lg">ShopEase</span>
-                <h4 class="font-medium text-2xl mb-4 mt-4">
+                <h4 class="font-medium text-2xl mb-4 mt-4 card-title">
                   Fix Mobile Button Issue
                 </h4>
                 <p class="bg-white p-4 text-gray-400">
@@ -110,14 +110,16 @@
                   <p class="text-sm text-gray-400">Deadline</p>
                   <p class="font-medium">21 March 2025</p>
                 </div>
-                <button class="btn btn-primary">Completed</button>
+                <button class="complete-btn btn btn-primary">Completed</button>
               </div>
             </div>
             <!-- card -->
             <div class="task-card px-4 py-6 bg-blue-50 rounded-xl">
               <div class="border-b border-dashed border-gray-200 pb-4">
                 <span class="bg-white py-2 px-4 rounded-lg">CloudSync</span>
-                <h4 class="font-medium text-2xl mb-4 mt-4">Add Dark Mode</h4>
+                <h4 class="font-medium text-2xl mb-4 mt-4 card-title">
+                  Add Dark Mode
+                </h4>
                 <p class="bg-white p-4 text-gray-400">
                   Store the user's preference in localStorage, update CSS
                   vari...
@@ -128,14 +130,14 @@
                   <p class="text-sm text-gray-400">Deadline</p>
                   <p class="font-medium">21 March 2025</p>
                 </div>
-                <button class="btn btn-primary">Completed</button>
+                <button class="complete-btn btn btn-primary">Completed</button>
               </div>
             </div>
             <!-- card -->
             <div class="task-card px-4 py-6 bg-blue-50 rounded-xl">
               <div class="border-b border-dashed border-gray-200 pb-4">
                 <span class="bg-white py-2 px-4 rounded-lg">SwiftPay</span>
-                <h4 class="font-medium text-2xl mb-4 mt-4">
+                <h4 class="font-medium text-2xl mb-4 mt-4 card-title">
                   Optimize Home page 
                 </h4>
                 <p class="bg-white p-4 text-gray-400">
@@ -147,14 +149,16 @@
                   <p class="text-sm text-gray-400">Deadline</p>
                   <p class="font-medium">21 March 2025</p>
                 </div>
-                <button class="btn btn-primary">Completed</button>
+                <button class="complete-btn btn btn-primary">Completed</button>
               </div>
             </div>
             <!-- card -->
             <div class="task-card px-4 py-6 bg-blue-50 rounded-xl">
               <div class="border-b border-dashed border-gray-200 pb-4">
                 <span class="bg-white py-2 px-4 rounded-lg">Meta</span>
-                <h4 class="font-medium text-2xl mb-4 mt-4">Add new emoji 🤲</h4>
+                <h4 class="font-medium text-2xl mb-4 mt-4 card-title">
+                  Add new emoji 🤲
+                </h4>
                 <p class="bg-white p-4 text-gray-400">
                   Find beautiful emoji and add in the comment box...
                 </p>
@@ -164,14 +168,14 @@
                   <p class="text-sm text-gray-400">Deadline</p>
                   <p class="font-medium">21 March 2025</p>
                 </div>
-                <button class="btn btn-primary">Completed</button>
+                <button class="complete-btn btn btn-primary">Completed</button>
               </div>
             </div>
             <!-- card -->
             <div class="task-card px-4 py-6 bg-blue-50 rounded-xl">
               <div class="border-b border-dashed border-gray-200 pb-4">
                 <span class="bg-white py-2 px-4 rounded-lg">Google LLC</span>
-                <h4 class="font-medium text-2xl mb-4 mt-4">
+                <h4 class="font-medium text-2xl mb-4 mt-4 card-title">
                   Integrate OpenAI API
                 </h4>
                 <p class="bg-white p-4 text-gray-400">
@@ -183,14 +187,14 @@
                   <p class="text-sm text-gray-400">Deadline</p>
                   <p class="font-medium">21 March 2025</p>
                 </div>
-                <button class="btn btn-primary">Completed</button>
+                <button class="complete-btn btn btn-primary">Completed</button>
               </div>
             </div>
             <!-- card -->
             <div class="task-card px-4 py-6 bg-blue-50 rounded-xl">
               <div class="border-b border-dashed border-gray-200 pb-4">
                 <span class="bg-white py-2 px-4 rounded-lg">Glassdoar</span>
-                <h4 class="font-medium text-2xl mb-4 mt-4">
+                <h4 class="font-medium text-2xl mb-4 mt-4 card-title">
                   Improve Job searching
                 </h4>
                 <p class="bg-white p-4 text-gray-400">
@@ -202,7 +206,7 @@
                   <p class="text-sm text-gray-400">Deadline</p>
                   <p class="font-medium">21 March 2025</p>
                 </div>
-                <button class="btn btn-primary">Completed</button>
+                <button class="complete-btn btn btn-primary">Completed</button>
               </div>
             </div>
           </div>
@@ -221,6 +225,7 @@
               Clear History
             </button>
           </div>
+          <div id="message-container" class="p-5"></div>
         </div>
       </div>
     </main>
