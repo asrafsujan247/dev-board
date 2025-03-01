@@ -87,8 +87,8 @@
                 <img class="w-7 h-7" src="./assets/calender.png" alt="" />
               </div>
               <div>
-                <p class="text-xl">Wed ,</p>
-                <p class="text-xl font-bold">Jul 28 2025</p>
+                <p id="current-day" class="text-xl"></p>
+                <p id="current-date" class="text-xl font-bold"></p>
               </div>
             </div>
           </div>
@@ -221,7 +221,10 @@
               <img class="mr-3" src="./assets/activity.png" alt="activity" />
               <p class="text-xl font-medium">Activity Log</p>
             </div>
-            <button class="btn btn-primary text-base font-medium mt-4">
+            <button
+              id="clear-history-btn"
+              class="btn btn-primary text-base font-medium mt-4"
+            >
               Clear History
             </button>
           </div>

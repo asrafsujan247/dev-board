@@ -1,12 +1,26 @@
-// show the task complete in activity log
+// current date in task details section
+const currentDate = new Date().toDateString();
+const dayName = currentDate.split(" ")[0];
+const otherDateDetails = currentDate.split(" ").slice(1, 4).join(" ");
 
+document.getElementById("current-day").innerText = `${dayName} ,`;
+document.getElementById("current-date").innerText = otherDateDetails;
+
+// show the task complete in activity log
 const completeButtons = document.getElementsByClassName("complete-btn");
+
+let taskCount = 0;
 
 for (let button of completeButtons) {
   button.addEventListener("click", function (event) {
     // alert
     alert("Board updated Successfully");
 
+    // task count
+    taskCount++;
+    if (taskCount === 6) {
+      alert("Congrats!!! You have completed all the current tasks");
+    }
     // btn disable
     button.setAttribute("disabled", "");
 
@@ -41,3 +55,11 @@ for (let button of completeButtons) {
     messageContainer.appendChild(p);
   });
 }
+
+// clear history
+
+document
+  .getElementById("clear-history-btn")
+  .addEventListener("click", function () {
+    document.getElementById("message-container").innerText = "";
+  });
