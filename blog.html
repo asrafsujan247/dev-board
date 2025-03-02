@@ -43,5 +43,107 @@
         </div>
       </nav>
     </header>
+    <main class="max-w-[1400px] mx-auto py-5">
+      <h2 class="text-4xl font-bold text-center pb-4">Blogs</h2>
+      <!-- question and answers section -->
+      <div class="bg-white rounded-xl mb-4">
+        <div class="">
+          <p
+            class="text-xl font-semibold border-b border-dashed border-gray-200 p-5"
+          >
+            Question-1:
+            <span class="font-bold"
+              >What are the different ways to select an element in the
+              DOM?</span
+            >
+          </p>
+          <p class="p-5 text-gray-500">
+            There are many ways to select an element in the DOM.
+            <br />
+            We can select an element with its tag name with
+            getElementsByTagName() method. To select an element with its ID, you
+            can use the getElementById() method. Also to select an element with
+            class name use getElementsByClassName() method. There are also two
+            methods, where we can select an element with their ID and class
+            name. They are querySelector() and querySelectorAll().
+          </p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl mb-4">
+        <div class="">
+          <p
+            class="text-xl font-semibold border-b border-dashed border-gray-200 p-5"
+          >
+            Question-2:
+            <span class="font-bold"
+              >What is the difference between innerHTML, innerText, and
+              textContent ?</span
+            >
+          </p>
+          <p class="p-5 text-gray-500">
+            The differences between innerHTML, innerText, and textContent are
+            that with innerHTML we can get and set tags of an element and the
+            text content as well. But in innerText we can't set or get the tag
+            names of an element. With innerText we can only get or set the text
+            content of an element. The textContent returns the text content also
+            like innerText, but it also returns the text contents that are not
+            rendered on the screen.
+          </p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl mb-4">
+        <div class="">
+          <p
+            class="text-xl font-semibold border-b border-dashed border-gray-200 p-5"
+          >
+            Question-3:
+            <span class="font-bold"> What is event delegation in the DOM?</span>
+          </p>
+          <p class="p-5 text-gray-500">
+            Event Delegation is a technique where we can set a event listener to
+            its parent element to handle the events triggered on its child
+            elements. Instead of adding event listeners to all the child
+            elements we can delegate the event handling to their parent element.
+          </p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl mb-4">
+        <div class="">
+          <p
+            class="text-xl font-semibold border-b border-dashed border-gray-200 p-5"
+          >
+            Question-4:
+            <span class="font-bold">What is event bubbling in the DOM?</span>
+          </p>
+          <p class="p-5 text-gray-500">
+            Event bubbling is a mechanism that, if an event is triggered on a
+            child element, it goes to the targeted element, and after checking
+            the event it bubbles up or propagates upward to its parent elements
+            to the root of the DOM.
+          </p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl mb-4">
+        <div class="">
+          <p
+            class="text-xl font-semibold border-b border-dashed border-gray-200 p-5"
+          >
+            Question-5:
+            <span class="font-bold"
+              >How do you create, add, and remove elements using
+              JavaScript?</span
+            >
+          </p>
+          <p class="p-5 text-gray-500">
+            We can create element using JavaScript with createElement() method.
+            Also can add the created element by appending the child in the paren
+            element with appendChild() method. And can also remove the element
+            with remove() method in JavaScript.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- script -->
+    <script src="/js/blog.js"></script>
   </body>
 </html>
