@@ -3,7 +3,7 @@
 document
   .getElementById("color-theme-btn")
   .addEventListener("click", function () {
-    const number1 = Math.floor(Math.random() * (255 - 0) + 0); // * (max - min) + min
+    const number1 = Math.floor(Math.random() * (255 - 0) + 0);
     const number2 = Math.floor(Math.random() * (255 - 0) + 0);
     const number3 = Math.floor(Math.random() * (255 - 0) + 0);
     const randomColor = `rgb(${number1}, ${number2}, ${number3})`;
@@ -82,12 +82,4 @@ document
   .getElementById("discover-something")
   .addEventListener("click", function () {
     window.location.href = "blog.html";
-  });
-
-// navigate to the index.html file
-
-document
-  .getElementById("back-to-desk-btn")
-  .addEventListener("click", function () {
-    window.location.href = "index.html";
   });
