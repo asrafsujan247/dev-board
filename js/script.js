@@ -75,3 +75,11 @@ document
   .addEventListener("click", function () {
     document.getElementById("message-container").innerText = "";
   });
+
+// discover something to navigate to the blog section
+
+document
+  .getElementById("discover-something")
+  .addEventListener("click", function () {
+    window.location.href = "blog.html";
+  });
